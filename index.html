@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Yezidi:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library</h1>
+    </header>
+    <main>
+        <table class="book-container">
+            <tr class="container-header">
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+            
+        </table>
+        <button class="add-book-btn" type="button">&plus; Book</button>
+    </main>
+    <div class="popup-overlay"></div>
+    <form id="add-book-popup" class="add-book-popup">
+        <div>
+            <label for="title">Title</label>
+            <input id="title" type="text">
+        </div>
+        <div>
+            <label for="author">Author</label>
+            <input id="author" type="text">
+        </div>
+        <div>
+            <label for="pages">Pages</label>
+            <input id="pages" type="text">
+        </div>
+        <div>
+            <label for="status">Status</label>
+            <select id="status">
+                <option value="Not started">Not Started</option>
+                <option value="Reading">Reading</option>
+                <option value="Read">Read</option>
+            </select>
+        </div>
+        <div class="popup-actions">
+            <button class="popup-add-btn" type="submit" form="add-book-popup">Add</button>
+            <button class="popup-cancel-btn" type="button" form="add-book-popup">Cancel</button>
+        </div>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
