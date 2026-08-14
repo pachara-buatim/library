@@ -127,7 +127,7 @@ function addBookToLibrary(event) {
   popup = false;
 }
 
-popupAddBtn.addEventListener("click", addBookToLibrary);
+addBookPopup.addEventListener("submit", addBookToLibrary);
 
 
 
